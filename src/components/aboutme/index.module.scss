@@ -1,0 +1,44 @@
+@use "./../../assets/styles/index.scss" as c;
+
+.aboutme {
+  text-align: initial;
+  width: 1100px;
+  margin-top: 150px;
+}
+
+.aboutme__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: c.$blue70;
+}
+
+.aboutme__textcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.aboutme__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: c.$blue70;
+}
+
+.aboutme__line {
+  display: inline-block;
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  left: 360px;
+  background: c.$linear10;
+  border-radius: 2px;
+  transform: rotate(-90deg);
+  z-index: 2;
+}
