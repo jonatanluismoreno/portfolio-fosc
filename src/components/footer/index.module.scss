@@ -1,0 +1,62 @@
+@use "./../../assets/styles/index.scss" as c;
+
+.footer {
+  margin-top: 280px;
+}
+
+.footer__socialmedia__container {
+  display: flex;
+  justify-content: center;
+  gap: 73px;
+}
+
+.footer__socialmedia {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.footer__socialmedia__image {
+}
+
+.footer__socialmedia__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: c.$blue70;
+}
+
+.footer__links {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.footer__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: c.$blue70;
+  margin: 0 48px;
+}
+
+.footer__title {
+  margin-bottom: 92px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: c.$blue70;
+}
