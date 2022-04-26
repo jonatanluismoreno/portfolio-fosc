@@ -1,0 +1,32 @@
+@use "./../../assets/styles/_index.scss" as c;
+
+.button__small {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: c.$black40;
+  padding: 12px 20px 13px;
+  background: c.$linear10;
+  border-radius: 6px;
+}
+.button__large {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px 13px;
+  width: 305px;
+  height: 56px;
+  left: 570px;
+  top: 2015px;
+  background: c.$linear10;
+  border-radius: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: c.$black40;
+}
