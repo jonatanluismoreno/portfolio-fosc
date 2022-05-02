@@ -1,7 +1,4 @@
-import globalClassNames, {
-  ClassNames as GlobalClassNames,
-} from "./../../../src/style";
-declare const classNames: typeof globalClassNames & {
+declare const classNames: {
   readonly mainsection: "mainsection";
   readonly mainsection__leftSide: "mainsection__leftSide";
   readonly mainsection__subtitle: "mainsection__subtitle";
@@ -14,5 +11,4 @@ export type ClassNames =
   | "mainsection__leftSide"
   | "mainsection__subtitle"
   | "mainsection__title"
-  | "mainsection__description"
-  | GlobalClassNames;
+  | "mainsection__description";

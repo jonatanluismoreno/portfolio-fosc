@@ -1,7 +1,10 @@
 import globalClassNames, { ClassNames as GlobalClassNames } from "./style.d";
 declare const classNames: typeof globalClassNames & {
-  readonly app: "app";
-  readonly app__arrowscroll: "app__arrowscroll";
+  readonly googleapis: "googleapis";
+  readonly "com/css2?family=Montserrat": "com/css2?family=Montserrat";
 };
 export default classNames;
-export type ClassNames = "app" | "app__arrowscroll" | GlobalClassNames;
+export type ClassNames =
+  | "googleapis"
+  | "com/css2?family=Montserrat"
+  | GlobalClassNames;
