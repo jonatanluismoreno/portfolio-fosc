@@ -1,0 +1,35 @@
+@use "./../../assets/styles/_index.scss" as c;
+
+button {
+  all: initial;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: c.$black50;
+}
+
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 30px;
+  }
+}
+
+.app__arrowscroll {
+  position: relative;
+  display: inline-block;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
