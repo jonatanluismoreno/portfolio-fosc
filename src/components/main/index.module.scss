@@ -1,5 +1,15 @@
 @use "./../../assets/styles/index.scss" as c;
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .mainsection {
   margin: 300px 300px 0;
   display: flex;
@@ -20,6 +30,9 @@
   line-height: 23px;
   color: c.$blue60;
   margin: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 .mainsection__title {
@@ -32,6 +45,9 @@
   background: c.$linear10;
   -webkit-background-clip: text;
   margin: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 .mainsection__description {
@@ -42,4 +58,7 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   color: c.$blue70;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
 }

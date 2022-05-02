@@ -14,9 +14,9 @@ export const Main = () => {
           <br />
           usable user interfaces.
         </h2>
-        <button className={styles.button__border}>Contact Me</button>
+        <button>Contact Me</button>
       </div>
-      <div className={styles.mainsection__rightSide}>
+      <div>
         <img src={programmer} alt="programmer" />
       </div>
     </section>

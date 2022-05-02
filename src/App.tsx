@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./App.module.scss";
+import { classNamesFunc } from "classnames-generics";
+
 import arrowscroll from "./assets/images/arrowscroll.svg";
 
 import { Header } from "./components/header/index";
@@ -9,6 +11,7 @@ import { Projects } from "./components/projects/index";
 import { Skills } from "./components/skills/index";
 import { Footer } from "./components/footer/index";
 
+const classNames = classNamesFunc<keyof typeof styles>();
 interface Props {}
 
 const Application: React.FC<Props> = ({}) => {
@@ -18,8 +21,9 @@ const Application: React.FC<Props> = ({}) => {
       behavior: "smooth",
     });
   };
+
   return (
-    <div className={styles.app}>
+    <div className={classNames(styles["app"])}>
       <Header />
       <Main />
       <img

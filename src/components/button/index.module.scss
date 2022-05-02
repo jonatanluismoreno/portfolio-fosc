@@ -11,6 +11,11 @@
   background: c.$linear10;
   border-radius: 6px;
 }
+
+.button__medium {
+  display: flex;
+}
+
 .button__large {
   display: flex;
   flex-direction: row;
