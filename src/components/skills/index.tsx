@@ -11,12 +11,58 @@ import firebase from "./../../assets/images/firebaseicon.svg";
 import docker from "./../../assets/images/dockericon.svg";
 import styledcomponent from "./../../assets/images/styledcomponents.svg";
 
-export const Skills = () => {
-  return (
-    <section className={classNames(styles["skills"])}>
-      <h1 className={classNames(styles["skills__title"])}>Skills</h1>
-      <div className={classNames(styles["skills__container"])}>
-        <div className={classNames(styles["skill"])}>
+import Skill from "./../skill";
+
+interface skillsTypes {
+  image: string;
+  title:
+    | "JAVASCRIPT"
+    | "TYPESCRIPT"
+    | "REACT"
+    | "GIT"
+    | "SASS"
+    | "FIREBASE"
+    | "DOCKER"
+    | "STYLED COMPONENTS";
+}
+
+const skills: skillsTypes[] = [
+  {
+    image: javascript,
+    title: "JAVASCRIPT",
+  },
+  {
+    image: typescript,
+    title: "TYPESCRIPT",
+  },
+  {
+    image: react,
+    title: "REACT",
+  },
+  {
+    image: git,
+    title: "GIT",
+  },
+  {
+    image: sass,
+    title: "SASS",
+  },
+  {
+    image: firebase,
+    title: "FIREBASE",
+  },
+  {
+    image: docker,
+    title: "DOCKER",
+  },
+  {
+    image: styledcomponent,
+    title: "STYLED COMPONENTS",
+  },
+];
+
+/*
+<div className={classNames(styles["skill"])}>
           <img
             src={javascript}
             alt=""
@@ -48,8 +94,7 @@ export const Skills = () => {
           />
           <h4 className={classNames(styles["skill__title"])}>GIT</h4>
         </div>
-      </div>
-      <div className={classNames(styles["skills__container"])}>
+        
         <div className={classNames(styles["skill"])}>
           <img
             src={sass}
@@ -84,6 +129,21 @@ export const Skills = () => {
           />
           <h4 className={classNames(styles["skill__title"])}>DOCKER</h4>
         </div>
+*/
+
+export const Skills = () => {
+  return (
+    <section className={classNames(styles["skills"])}>
+      <h1 className={classNames(styles["skills__title"])}>Skills</h1>
+      <div className={classNames(styles["skills__container"])}>
+        {skills.slice(0, 4).map(({ image, title }) => (
+          <Skill image={image} title={title} />
+        ))}
+      </div>
+      <div className={classNames(styles["skills__container"])}>
+        {skills.slice(4).map(({ image, title }) => (
+          <Skill image={image} title={title} />
+        ))}
       </div>
     </section>
   );

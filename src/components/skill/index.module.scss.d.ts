@@ -1,5 +1,4 @@
 declare const classNames: {
-  readonly skills: "skills";
   readonly skills__title: "skills__title";
   readonly skills__container: "skills__container";
   readonly skill: "skill";
@@ -8,7 +7,6 @@ declare const classNames: {
 };
 export default classNames;
 export type ClassNames =
-  | "skills"
   | "skills__title"
   | "skills__container"
   | "skill"
