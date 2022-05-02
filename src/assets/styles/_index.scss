@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Tinos&display=swap");
+
 $white: #ffffff;
 $black10: #000000;
 $black20: #1f2626;
@@ -26,4 +28,13 @@ $linear10: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
 $linear20: linear-gradient(0deg, #ffb199 0%, #ff0844 100%);
 
 .row {
+}
+
+button {
+  all: initial;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
