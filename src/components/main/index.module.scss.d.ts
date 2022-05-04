@@ -4,6 +4,7 @@ declare const classNames: {
   readonly mainsection__subtitle: "mainsection__subtitle";
   readonly mainsection__title: "mainsection__title";
   readonly mainsection__description: "mainsection__description";
+  readonly mainsection__button: "mainsection__button";
 };
 export default classNames;
 export type ClassNames =
@@ -11,4 +12,5 @@ export type ClassNames =
   | "mainsection__leftSide"
   | "mainsection__subtitle"
   | "mainsection__title"
-  | "mainsection__description";
+  | "mainsection__description"
+  | "mainsection__button";

@@ -11,12 +11,13 @@
 }
 
 .mainsection {
-  margin: 300px 300px 0;
+  margin-top: calc((100vh - 504px) / 2);
   display: flex;
   align-items: center;
 }
 
 .mainsection__leftSide {
+  width: calc(50vw - 325px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -39,7 +40,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 65px;
   line-height: 88px;
   -webkit-text-fill-color: transparent;
   background: c.$linear10;
@@ -61,4 +62,50 @@
   animation-name: fadeIn;
   animation-duration: 4s;
   animation-iteration-count: 1;
+}
+
+@media (max-width: 1750px) {
+  .mainsection {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .mainsection__leftSide {
+    margin-top: 70px;
+    width: calc(50vw - 150px);
+  }
+  .mainsection__title {
+    font-size: 62px;
+    line-height: 65px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .mainsection__leftSide {
+    width: calc(50vw);
+  }
+  .mainsection__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .mainsection {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mainsection__leftSide {
+    width: calc(85vw);
+    align-items: center;
+  }
+  .mainsection__title {
+    font-size: 55px;
+  }
+  .mainsection__description {
+    text-align: center;
+  }
+  .mainsection__button {
+    display: none;
+  }
 }
