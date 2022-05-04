@@ -12,7 +12,9 @@ const Skill: React.FC<Props> = ({ image, title }) => {
   return (
     <div className={classNames(styles["skill"])}>
       <img src={image} alt="" className={classNames(styles["skill__image"])} />
-      <h4 className={classNames(styles["skill__title"])}>{title} </h4>
+      <div className={classNames(styles["skill__titlecontainer"])}>
+        <h4 className={classNames(styles["skill__title"])}>{title} </h4>
+      </div>
     </div>
   );
 };

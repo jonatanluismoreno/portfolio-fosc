@@ -23,7 +23,7 @@ interface skillsTypes {
     | "SASS"
     | "FIREBASE"
     | "DOCKER"
-    | "STYLED COMPONENTS";
+    | "STYLED \n COMPONENTS";
 }
 
 const skills: skillsTypes[] = [
@@ -57,7 +57,7 @@ const skills: skillsTypes[] = [
   },
   {
     image: styledcomponent,
-    title: "STYLED COMPONENTS",
+    title: "STYLED \n COMPONENTS",
   },
 ];
 

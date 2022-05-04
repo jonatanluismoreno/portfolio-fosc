@@ -18,12 +18,21 @@
 
 .skill {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .skill__image {
   display: inline-flex;
   width: 120px;
   height: 120px;
+}
+
+.skill__titlecontainer {
+  display: inline-block;
+  width: 150px;
 }
 
 .skill__title {
