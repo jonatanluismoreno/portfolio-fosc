@@ -1,4 +1,6 @@
-import globalClassNames, { ClassNames as GlobalClassNames } from "....style.d";
+import globalClassNames, {
+  ClassNames as GlobalClassNames,
+} from "./../../style.d";
 declare const classNames: typeof globalClassNames & {
   readonly app: "app";
   readonly app__arrowscroll: "app__arrowscroll";

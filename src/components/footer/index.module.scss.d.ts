@@ -1,4 +1,6 @@
-import globalClassNames, { ClassNames as GlobalClassNames } from "....style.d";
+import globalClassNames, {
+  ClassNames as GlobalClassNames,
+} from "./../../style.d";
 declare const classNames: typeof globalClassNames & {
   readonly footer: "footer";
   readonly footer__socialmedia__container: "footer__socialmedia__container";

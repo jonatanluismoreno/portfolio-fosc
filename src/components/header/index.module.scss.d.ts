@@ -1,4 +1,6 @@
-import globalClassNames, { ClassNames as GlobalClassNames } from "....style.d";
+import globalClassNames, {
+  ClassNames as GlobalClassNames,
+} from "./../../style.d";
 declare const classNames: typeof globalClassNames & {
   readonly header: "header";
   readonly header__leftSide: "header__leftSide";
