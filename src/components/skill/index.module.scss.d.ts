@@ -1,6 +1,4 @@
-import globalClassNames, {
-  ClassNames as GlobalClassNames,
-} from "./../../style";
+import globalClassNames, { ClassNames as GlobalClassNames } from "....style.d";
 declare const classNames: typeof globalClassNames & {
   readonly skills__title: "skills__title";
   readonly skills__container: "skills__container";

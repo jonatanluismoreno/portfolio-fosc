@@ -20,14 +20,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [
-    react(),
-    sassDts({
-      allGenerate: true,
-      global: {
-        generate: true,
-        outFile: path.resolve(__dirname, "./src/style.d.ts"),
-      },
-    }),
-  ],
+  plugins: [react()],
 });
