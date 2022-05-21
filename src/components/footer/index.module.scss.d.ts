@@ -1,4 +1,7 @@
-declare const classNames: {
+import globalClassNames, {
+  ClassNames as GlobalClassNames,
+} from "./../../style";
+declare const classNames: typeof globalClassNames & {
   readonly footer: "footer";
   readonly footer__socialmedia__container: "footer__socialmedia__container";
   readonly footer__socialmedia: "footer__socialmedia";
@@ -17,4 +20,5 @@ export type ClassNames =
   | "footer__socialmedia__title"
   | "footer__links"
   | "footer__link"
-  | "footer__title";
+  | "footer__title"
+  | GlobalClassNames;

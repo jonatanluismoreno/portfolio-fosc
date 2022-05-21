@@ -51,3 +51,13 @@
   background: c.$linear10;
   border-radius: 6px;
 }
+
+@media (max-width: 1000px) {
+  .header__leftSide {
+    margin-left: 10vw;
+  }
+
+  .header__rightSide {
+    margin-right: 10vw;
+  }
+}

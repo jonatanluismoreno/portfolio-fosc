@@ -1,4 +1,7 @@
-declare const classNames: {
+import globalClassNames, {
+  ClassNames as GlobalClassNames,
+} from "./../../style";
+declare const classNames: typeof globalClassNames & {
   readonly header: "header";
   readonly header__leftSide: "header__leftSide";
   readonly header__rightSide: "header__rightSide";
@@ -11,4 +14,5 @@ export type ClassNames =
   | "header__leftSide"
   | "header__rightSide"
   | "button__noBorder"
-  | "button__border";
+  | "button__border"
+  | GlobalClassNames;

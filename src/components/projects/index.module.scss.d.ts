@@ -1,4 +1,7 @@
-declare const classNames: {
+import globalClassNames, {
+  ClassNames as GlobalClassNames,
+} from "./../../style";
+declare const classNames: typeof globalClassNames & {
   readonly projects: "projects";
   readonly projects__title: "projects__title";
   readonly projects__container: "projects__container";
@@ -25,4 +28,5 @@ export type ClassNames =
   | "project__title"
   | "project__technologies"
   | "project__tech"
-  | "project__description";
+  | "project__description"
+  | GlobalClassNames;
